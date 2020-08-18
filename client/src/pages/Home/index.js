@@ -21,17 +21,19 @@ export const Home = () => {
     }
 
     return (
-        <div>
-            <Message className="message-container" size="huge" secondary="true">
-                <Header size="huge"> Home</Header>
-                <p style={{ marginBottom: "5px" }}>This is a Boiler Plate MERN application with authentication using JSON Web Tokens.</p>
-                <p style={{ margin: "5px 0 25px" }}>This APP was design to be used as a starting point for any developer looking to integrate authentication with a MERN application.</p>
-                <Link to="/login">
-                    {showLoginBtn()}
-                </Link>
-            </Message>
-
-        </div>
+    
+    <div id="background-home" classNameName="container-fluid">
+      
+      <div classNameName="row"/>
+        <div classNameName="col-sm-3"> </div>
+        <div classNameName="col-sm-6"/>
+          <div classNameName="home-title-backg">
+          <h1 classNameName="home-title">Bella Italia</h1>
+          <br></br>
+          <h2 classNameName="home-title">America's Italy</h2>
+          <br></br>
+         </div>
+</div>
     )
 };
 
