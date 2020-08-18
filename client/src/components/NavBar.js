@@ -14,13 +14,22 @@ export const NavBar = () => {
             return (
                 <>
                     <Link to="/dashboard" className="item">{currentUser.email}</Link>
+
+
+
                     <Logout />
                 </>
             )
         } else {
             return (
                 <>
+<<<<<<< HEAD
                     {/* <Link to="/login" className="item">Login</Link> */}
+=======
+                     <Link to="/menu" className="item">Menu</Link>
+
+                    <Link to="/login" className="item">Login</Link>
+>>>>>>> 964ffce14dbb7e2b9c31226ffc5e1fb721f95ef2
                     <Link to="/register" className="item">Register</Link>
                     <Link to="/reserevation" className="item">Reserevation</Link>
                     <Link to="/orderonline" className="item">Online Ordering</Link>
@@ -37,6 +46,7 @@ export const NavBar = () => {
             <Link to="/" className="item">Home</Link>
             <Link to="/menu" className="item">Menu</Link>
             {isAuthenticated ? <Link to="/pageone" className="item">Page One</Link> : ""}
+            {isAuthenticated ? <Link to="/menu" className="item">Menu</Link> : ""}
             <div className="right menu">
                 {showLinks()}
             </div>
