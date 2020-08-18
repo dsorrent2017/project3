@@ -6,11 +6,20 @@ import { loadUser } from "../actions/authActions";
 import NavBar from "./NavBar";
 
 import Home from "../pages/Home";
-import Home from "../pages/Menu";
-import Home from "../pages/Order";
-import Home from "../pages/Reservation";
-import Home from "../pages/Contact";
-import Home from "../pages/Catering";
+import Menu from "../pages/Menu";
+
+// import Order from "../pages/Order";
+// import Reservation from "../pages/Reservation";
+// import Contact from "../pages/Contact";
+// import Catering from "../pages/Catering";
+
+/***
+  { <Route path="/" exact component={OrderOnline} />
+                    <Route path="/" exact component={Reservation} />
+                    <Route path="/" exact component={Contact} />
+                    <Route path="/" exact component={Catering} /> 
+                }
+ */
 
 import UserDashboard from "../pages/UserDashboard";
 import PageOne from "../pages/PageOne";
@@ -33,19 +42,13 @@ export const App = () => {
                 <NavBar />
                 <Switch>
                     <Route path="/" exact component={Home} />
-                    <Route path="/" exact component={Menu} />
-                    <Route path="/" exact component={OrderOnline} />
-                    <Route path="/" exact component={Reservation} />
-                    <Route path="/" exact component={Contact} />
-                    <Route path="/" exact component={Catering} />
 
+ 
                     <Route path="/login" component={Login} />
                     <Route path="/register" component={Register} />
-                    <Route path="/" exact component={Menu} />
-                    <Route path="/login" component={Login} />
-                    <Route path="/register" component={Register} />
-                    <PrivateRoute path="/dashboard" component={UserDashboard} />
-                    <PrivateRoute path="/pageone" component={PageOne} />
+
+                    <Route path="/menu" exact component={Menu} />
+
                     <Route component={NoMatch} />
                 </Switch>
             </Router>

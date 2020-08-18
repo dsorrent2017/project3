@@ -13,12 +13,17 @@ export const NavBar = () => {
             return (
                 <>
                     <Link to="/dashboard" className="item">{currentUser.email}</Link>
+
+
+
                     <Logout />
                 </>
             )
         } else {
             return (
                 <>
+                     <Link to="/menu" className="item">Menu</Link>
+
                     <Link to="/login" className="item">Login</Link>
                     <Link to="/register" className="item">Register</Link>
                 </>
@@ -31,6 +36,7 @@ export const NavBar = () => {
         <div className="ui inverted menu">
             <Link to="/" className="item">Home</Link>
             {isAuthenticated ? <Link to="/pageone" className="item">Page One</Link> : ""}
+            {isAuthenticated ? <Link to="/menu" className="item">Menu</Link> : ""}
             <div className="right menu">
                 {showLinks()}
             </div>
