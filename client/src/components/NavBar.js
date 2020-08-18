@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Logout from "./Logout";
 
+
 export const NavBar = () => {
 
     const { currentUser, isAuthenticated } = useSelector(state => state.auth)
@@ -19,9 +20,12 @@ export const NavBar = () => {
         } else {
             return (
                 <>
-                    <Link to="/login" className="item">Login</Link>
+                    {/* <Link to="/login" className="item">Login</Link> */}
                     <Link to="/register" className="item">Register</Link>
-                    <link to="/menu" className="item">Menu</link>
+                    <Link to="/reserevation" className="item">Reserevation</Link>
+                    <Link to="/orderonline" className="item">Online Ordering</Link>
+                    <Link to="/catering" className="item">Catering</Link>
+                    <Link to="/contact" className="item">Contact</Link>
                 </>
             )
         }
@@ -31,6 +35,7 @@ export const NavBar = () => {
     return (
         <div className="ui inverted menu">
             <Link to="/" className="item">Home</Link>
+            <Link to="/menu" className="item">Menu</Link>
             {isAuthenticated ? <Link to="/pageone" className="item">Page One</Link> : ""}
             <div className="right menu">
                 {showLinks()}

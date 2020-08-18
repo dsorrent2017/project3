@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css/family=Poppins");
-body
+/* menu
 {
 margin: 0;
 padding: 0;
 display: flex;
 justify-content: center;
-align-items: center;
-height:100vh;
+align-items: center; */
+
+/* height:100vh;
 font-family: "Poppins",sans-serif;
+
+} */
+.menu
+{
+    width: 300px;
+    margin: 0 auto;
 }
 h2{
 margin: 0;
@@ -30,10 +37,10 @@ list-style: none;
 padding: 5px 0;
 font-size: 16px;
 }
-ul li input[type="checkbox"]
-{
+/* ul li input[type="checkbox"] */
+/* { */
  /* display:none; */
-}
+/* } */
 ul li span.list
 {
     position: relative;

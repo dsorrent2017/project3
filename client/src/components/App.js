@@ -32,7 +32,7 @@ export const App = () => {
             <Router history={history}>
                 <NavBar />
                 <Switch>
-                    <Route path="/" exact component={Home} />
+                    <Route path="/" exact component={Login} />
                   
                     {/* <Route path="/" exact component={OrderOnline} />
                     <Route path="/" exact component={Reservation} />
