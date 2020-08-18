@@ -21,6 +21,7 @@ export const NavBar = () => {
                 <>
                     <Link to="/login" className="item">Login</Link>
                     <Link to="/register" className="item">Register</Link>
+                    <link to="/menu" className="item">Menu</link>
                 </>
             )
         }
