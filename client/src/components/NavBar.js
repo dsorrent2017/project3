@@ -23,15 +23,9 @@ export const NavBar = () => {
         } else {
             return (
                 <>
-<<<<<<< HEAD
                     {/* <Link to="/login" className="item">Login</Link> */}
-=======
-                     <Link to="/menu" className="item">Menu</Link>
-
-                    <Link to="/login" className="item">Login</Link>
->>>>>>> 964ffce14dbb7e2b9c31226ffc5e1fb721f95ef2
                     <Link to="/register" className="item">Register</Link>
-                    <Link to="/reserevation" className="item">Reserevation</Link>
+                    <Link to="/reservation" className="item">Reservation</Link>
                     <Link to="/orderonline" className="item">Online Ordering</Link>
                     <Link to="/catering" className="item">Catering</Link>
                     <Link to="/contact" className="item">Contact</Link>
@@ -45,6 +39,8 @@ export const NavBar = () => {
         <div className="ui inverted menu">
             <Link to="/" className="item">Home</Link>
             <Link to="/menu" className="item">Menu</Link>
+            <Link to="/reservation" className="item">Reservation</Link>
+            
             {isAuthenticated ? <Link to="/pageone" className="item">Page One</Link> : ""}
             {isAuthenticated ? <Link to="/menu" className="item">Menu</Link> : ""}
             <div className="right menu">
