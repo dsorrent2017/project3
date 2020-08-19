@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaab30/react-jwt-boiler-plate.git"
+    "url": "git+https://github.com/restaurantapp"
   },
-  "author": "Jorge Alvarez",
+  "author": "Myrna Cantando",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jaab30/react-jwt-boiler-plate/issues"

@@ -20,7 +20,7 @@ const Register = () => {
 
     return (
 
-        <div classNameName="form-container">
+        <div className="form-container">
             <Header as='h2' secondary="true" textAlign='center'>
                 Register
             </Header>

@@ -74,10 +74,10 @@ const renderInput = ({ input, label }) => {
 
     return (
 
-        <div classNameName="field">
-            <div classNameName="ui fluid left icon input">
+        <div className="field">
+            <div className="ui fluid left icon input">
                 <input {...input} autoComplete="off" placeholder={label} type={`${input.name !== "password" ? "text" : "password"}`} />
-                <i aria-hidden="true" classNameName={selectIcon()}></i>
+                <i aria-hidden="true" className={selectIcon()}></i>
             </div>
         </div>
 

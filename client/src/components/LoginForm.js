@@ -32,7 +32,7 @@ const LoginForm = (props) => {
                         component={renderInput}
                         label="E-mail address"
                     />
-                    {errorMessage ? <Label classNameName="alertMssg" basic color='red'>{errorMessage}</Label> : ""}
+                    {errorMessage ? <Label className="alertMssg" basic color='red'>{errorMessage}</Label> : ""}
                     <Field
                         name="password"
                         component={renderInput}
@@ -64,10 +64,10 @@ const renderInput = ({ input, label }) => {
 
     return (
 
-        <div classNameName="field">
-            <div classNameName="ui fluid left icon input">
+        <div className="field">
+            <div className="ui fluid left icon input">
                 <input {...input} autoComplete="off" placeholder={label} type={`${input.name === "email" ? "text" : "password"}`} />
-                <i aria-hidden="true" classNameName={selectIcon()}></i>
+                <i aria-hidden="true" className={selectIcon()}></i>
             </div>
         </div>
 

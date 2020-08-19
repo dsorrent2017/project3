@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Message } from "semantic-ui-react";
+// import { Header, Message } from "semantic-ui-react";
 import "./style.css"
 
 export const Menu = () => {
@@ -9,7 +9,7 @@ export const Menu = () => {
               
                 {/* <p>Our Menu</p> */}
             </div>
-            <div className="menu">
+            <div className="menu-food">
                 <h1>Our Menu</h1>
                 <ul>
                     <h3>Salads</h3>
