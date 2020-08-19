@@ -9,7 +9,7 @@ export const UserDashboard = () => {
 
     return (
         <>
-            <Message classNameName="message-container" size="huge" secondary="true">
+            <Message className="message-container" size="huge" secondary="true">
                 <Header size="huge"> User Dashboard </Header>
                 <p>This is a Protected Route</p>
                 <p>Welcome {user ? user.email : ""}</p>

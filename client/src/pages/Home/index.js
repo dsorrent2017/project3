@@ -22,15 +22,15 @@ export const Home = () => {
 
     return (
     
-    <div id="background-home" classNameName="container-fluid">
+    <div id="background-home" className="container-fluid">
       
-      <div classNameName="row"/>
-        <div classNameName="col-sm-3"> </div>
-        <div classNameName="col-sm-6"/>
-          <div classNameName="home-title-backg">
-          <h1 classNameName="home-title">Bella Italia</h1>
+      <div className="row"/>
+        <div className="col-sm-3"> </div>
+        <div className="col-sm-6"/>
+          <div className="home-title-backg">
+          <h1 className="home-title">Bella Italia</h1>
           <br></br>
-          <h2 classNameName="home-title">America's Italy</h2>
+          <h2 className="home-title">America's Italy</h2>
           <br></br>
          </div>
 </div>
