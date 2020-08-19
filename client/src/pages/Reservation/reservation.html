@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/ssfaviconv3.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="MERN with Authentication using JSON Web Tokens" />
+  <meta property="og:url" content="https://mern-auth-boiler-plate-jwt.herokuapp.com/" />
+  <meta property="og:image" content="%PUBLIC_URL%/images/login.jpg" />
+  <meta name="description"
+    content="This is a Boiler Plate MERN application with authentication using JSON Web Tokens. " />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <title>Reservation</title>
+</head>
+<div class="reservations-description container">
+    <h1 id="title-1" class="special-title-1">RESERVATIONS</h1>
+    <h2 id="title-2" class="special-title-2">Book a Table</h2>
+    
+  </div>
+  <div class="container-fluid reservations-form dark-overlay">
+    <img
+      sizes="(max-width: 2560px) 100vw, 2560px"
+     
+    
+      class="reservations-form-bg">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">NAME:</label>
+          <input type="text" class="form-control" id="inputName" placeholder="John Smith">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">EMAIL:</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputDate">DATE:</label>
+          <input type="date" class="form-control" id="inputDate">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputNumber">PARTY OF:</label>
+          <input type="number" min="1" class="form-control" id="inputNumber" placeholder="1">
+        </div>
+        <div class="form-group col-md-5">
+          <label for="inputPhone">PHONE:</label>
+          <input type="tel" class="form-control" id="inputPhone" placeholder="99123456">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputTextarea">MESSAGE:</label>
+        <textarea class="form-control" id="inputTextarea" rows="7" placeholder="Additional details"></textarea>
+      </div>
+      <button type="submit" class="btn btn-light">SUBMIT</button>
+    </form>
+  </div>
+
+  <!-- GOOGLE MAP -->
+  <!-- <div id="googleMapContainer" class="homepage-google-map">
+    <iframe title="Our location on Google My Maps" class="google-map" src="https://www.google.com/maps/d/embed?mid=1YihUagJV98aTSoPRpalSyqRjTVhaFv5E&hl=en"></iframe>
+  </div>       -->
+
+</main>
+<footer class="page-footer">
+  <div class="container">
+    <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="#">
+      <img src="../images/italianmarket" width="50" height="50" alt="Logo">
+    </a>
+    <div class="row">
+      <div class="col-md-3">
+        <h5 class="page-footer-title">OPENING HOURS</h5>
+        <p class="mb-0">Open daily from 8am</p> 
+        <p class="mb-0">Bar: Daily from 8am - 12pm</p> 
+        <p class="mb-0">Breakfast: Daily from 8am - 11am</p> 
+        <p class="mb-0">Lunch: Daily from 12pm - 3pm</p>
+        <p>Dinner: Daily from 6pm - 12pm</p>
+      </div>
+      <div class="col-md-3 h-100 border-left-custom">
+        <h5 class="page-footer-title mt-3 mt-md-0">LOCATION</h5>
+        <address>
+          Bella Italia &amp; Italian Restaurant<br>
+          1600 Broad Street<br>
+          Philadelphia,PA 19148<br>
+          <abbr title="Phone">P:</abbr> (215) 366-8820<br>
+          <abbr title="Email">E:</abbr> info@bellaitalia.com
+        </address>
+      </div>
+      <div class="col-md-3 h-100 border-left-custom">
+        <h5 class="page-footer-title mt-3 mt-md-0">FOLLOW US</h5>
+        <div class="mb-3">
+          <a class="footer-social" href="https://github.com/cantando" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a class="footer-social" href="https://github.com/cantando" aria-label="tripadvisor"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+          <a class="footer-social" href="https://github.com/cantando" aria-label="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3 h-100 border-left-custom">
+        <h5 class="page-footer-title mt-3 mt-md-0">NEWSLETTER</h5>
+        <p>
+          Complete the form to receive information on the latest events,
+          news and special offers at Bella Italia.
+        </p>
+        
+        <form id="newsletter-form">
+          <label class="sr-only" for="formEmail">Email</label>
+          <input type="email" class="form-control form-control-sm rounded" id="formEmail" placeholder="name@example.com">
+          <button type="submit" class="btn btn-sm btn-outline-light btn-block mt-2">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer-copyright container-fluid text-center">
+    © 2020 Bella Italia &amp; Restaurant. 
+  </div>
+</footer>
+<a id="back-to-top" class="back-to-top smooth-scroll" href="#top">
+  <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+</a>
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+<!-- Bootstrap -->
+<script 
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+  crossorigin="anonymous">
+</script>
+<script src="../js/site.js"></script>
+<script src="../js/reservations-animations.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+<body id="top">    
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+</body>
+
+</html>

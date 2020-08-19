@@ -18,6 +18,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
+import Contact from '../pages/Contact';
 
 export const App = () => {
 
@@ -43,6 +44,7 @@ export const App = () => {
                     <Route path="/login" component={Login} />
                     <Route path="/register" component={Register} />
                     <Route path="/menu" exact component={Menu} />
+                    <Route path="/contact" exact component={Contact} />
                     <Route path="/reservation" exact component={Reservation} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
                     <PrivateRoute path="/pageone" component={PageOne} />
