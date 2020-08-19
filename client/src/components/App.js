@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { loadUser } from "../actions/authActions";
 import NavBar from "./NavBar";
 
-import Home from "../pages/Home";
+
 import Menu from "../pages/Menu";
 // import OrderOnline from "../pages/Order";
 import Reservation from "../pages/Reservation";
