@@ -6,8 +6,8 @@ export const PageOne = () => {
     return (
         <>
             <Message className="message-container" size="huge" secondary="true">
-                <Header size="huge"> Page One </Header>
-                <p>This is a Protected Route</p>
+                <Header size="huge"> Welcome </Header>
+                <p>Bella Italia</p>
             </Message>
         </>
     )

@@ -1,0 +1,38 @@
+.contact {
+    background-color: var(--white);
+    width: 100%;
+    max-width: 50em;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+
+}
+ h5{
+padding-top: 20px;
+font-style: normal;
+font-family: Lucida Sans;
+font-size: large;
+font-weight: bold;
+}
+
+p{
+padding-top: 10px;
+font-style: normal;
+font-size: normal;
+}
+.form-control{
+  font-size: large;
+  padding-bottom: 10px;
+}
+btn-danger{
+  padding: 15px 32px;
+
+
+}
+.button{
+padding-top: 20px;
+
+}
+  
+  
