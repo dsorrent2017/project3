@@ -25,26 +25,8 @@ function Contact() {
             <p className="mb-0">Lunch: Daily from 12pm - 3pm</p>
             <p>Dinner: Daily from 6pm - 12pm</p>
         </div>
-        {/* <div className="col-md-3 h-100 border-left-custom" />
-        <h5 className="page-footer-title mt-3 mt-md-0">LOCATION</h5>
-        <address>
-            Bella Italia &amp; Italian Restaurant<br/>
-                1600 Broad Street<br/>
-              Philadelphia,PA 19148<br/>
-                <abbr title="Phone">P:</abbr> (215) 366-8820<br/>
-            <abbr title="Email">E:</abbr> info@bellaitalia.com
-            </address> */}
-      
-          <div className="row" />
-        <div className="col-md-12 h-100 border-left-custom">
-            <h5 className="page-footer-title mt-12 mt-md-0" >FOLLOW US</h5>
-            
-            <div className="mb-3">
-                <a className="footer-social" href="https://github.com/cantando" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a className="footer-social" href="https://github.com/cantando" aria-label="tripadvisor"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-                <a className="footer-social" href="https://github.com/cantando" aria-label="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
+       
+          
        
 
         <div className="col-md-3 h-100 border-left-custom" >

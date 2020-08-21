@@ -15,6 +15,18 @@ function Footer() {
             </address>
             © 2020 Bella Italia &amp; Restaurant.
         </div>
+        <div className="row" />
+                <div className="col-md-12 h-100 border-left-custom">
+                    <h5 className="page-footer-title mt-12 mt-md-0" >FOLLOW US</h5>
+                    <div class="ml-auto">
+                        <a class="nav-social mr-2" href="https://github.com/cantando"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="nav-social mr-2" href="https://github.com/cantando"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                        <a class="nav-social mr-2" href="https://github.com/cantando"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a class="nav-social" href="https://github.com/cantando"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+
         </>
     );
 

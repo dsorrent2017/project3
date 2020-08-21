@@ -15,6 +15,8 @@ import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
 import Contact from '../pages/Contact';
+import Catering from "../pages/Catering";
+import OrderOnline from "../pages/Orderonline";
 
 export const App = () => {
 
@@ -38,11 +40,13 @@ return (
                     <Route path="/menu" exact component={Menu} />
                     <Route path="/contact" exact component={Contact} />
                     <Route path="/reservation" exact component={Reservation} />
+                    <Route path="/catering" exact component={Catering} />
+                    <Route path="/orderonline" exact component={OrderOnline} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
                     <PrivateRoute path="/pageone" component={PageOne} />
                     <Route component={NoMatch} />
                 </Switch>
-   ``         </Router>
+           </Router>
 )     
 }
 
