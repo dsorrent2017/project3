@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../components/Footer";
+import Footer from "../Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './reservation.css'
 
@@ -65,6 +65,9 @@ function Reservation() {
             <p className="mb-0">Lunch: Daily from 12pm - 3pm</p>
             <p className="mb-0">Dinner: Daily from 4pm - 11pm</p>
         </div>
+         <div id="googleMapContainer" class="homepage-google-map">
+    <iframe title="Our location on Google My Maps" class="google-map" src="https://google.com/maps/embed/v1/place?key=AIzaSyD0cpsvSdvUgtIg9yRInmJ0z8RgFNXxWyk&amp;q=Philadelphia+Pennsylvania+"></iframe>
+  </div> 
        
 
         
