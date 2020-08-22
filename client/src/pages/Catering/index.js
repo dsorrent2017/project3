@@ -3,6 +3,7 @@ import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button, Container, Row, Col,
 } from 'reactstrap';
+// import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
 import { Link } from "react-router-dom";
 
 

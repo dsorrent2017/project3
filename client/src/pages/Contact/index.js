@@ -1,8 +1,6 @@
 import React from "react";
-// import Footer from "./src/components/Footer";
-import Footer from "../../components/Footer";
-// import Info from "./pages/Info";
-// import Form from "../../pages/Form";
+import Footer from "../Footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './contact.css'
 
 function Contact() {

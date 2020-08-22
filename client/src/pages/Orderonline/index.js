@@ -6,7 +6,7 @@ import {
 
 
 
-function Online() {
+function OrderOnline() {
     return (
         
         <Container>
@@ -40,4 +40,4 @@ function Online() {
 )
 
 }
-  export default Online;
+  export default OrderOnline;
