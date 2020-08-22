@@ -4,6 +4,7 @@ import {
     CardTitle, CardSubtitle, Button, Container, Row, Col,
 } from 'reactstrap';
 
+import"./footer.css"
 function Footer() {
 
     return (
