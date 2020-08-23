@@ -18,7 +18,7 @@ import Contact from '../pages/Contact';
 import Catering from "../pages/Catering";
 import OrderOnline from "../pages/Orderonline";
 
-import Menus from "./pages/Menus";  //Dan -- we need an admin folder for Menus, Reservations and other admin pages, Just following GoogleBooks HW Layout for now
+//import Menus from "../pages/Menus";  //Dan -- we need an admin folder for Menus, Reservations and other admin pages, Just following GoogleBooks HW Layout for now
 
 export const App = () => {
 
