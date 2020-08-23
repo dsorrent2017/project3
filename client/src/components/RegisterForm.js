@@ -1,18 +1,53 @@
+/****
+useState is a !!!!Hook (function) that allows you to have state variables in functional components.
+
+You pass the initial state to this function, and it returns a variable with the current state value (not necessarily the initial state) and another function to update this value.
+
+useEffect:
+
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.\
+The Effect Hook lets you perform side effects in function components
+
+Redux is a predictable state container for JavaScript applications. It helps you write applications that behave consistently, 
+
+run in different environments (client, server, and native), and are easy to test. Simply put, Redux is a state management tool.
+ 
+ ****/
+
 
 import React, { useState, useEffect } from 'react';
+
+/*
+ Redux:
+
+Each call to useSelector() creates an individual subscription to the Redux store. Because of the React update batching behavior used in React Redux v7, a dispatched action that 
+causes multiple useSelector() s in the same component to return new values should only result in a single re-render.
+
+
+
+React Redux now includes its own useSelector and useDispatch Hooks that can be used instead of connect . ... You pass it a function that takes the Redux store state and returns the pieces of state you're interested in. useDispatch 
+replaces connect 's mapDispatchToProps but is lighter weight.Nov 20, 2019
+
+“Props” is a special keyword in React, which stands for properties and is being used for passing data from one component to another. But the important part here is that data with props are being passed in a uni-directional flow.
+( one way from parent to child)Oct 7, 2019
+
+ */
+
 import { useSelector, useDispatch } from "react-redux";
+
 import { Button, Form, Message, Segment, Label } from 'semantic-ui-react';
 import { Field, reduxForm } from "redux-form";
 import { clearErrors } from "../actions/authActions";
 
-const RegisterForm = (props) => {
+const RegisterForm = (props) => {  //This is React dependency injection calling RegisterForm with props
+    debugger; 
     console.log(props);
     const error = useSelector(state => state.errors);
     const [errorMessage, setErrorMessage] = useState("");
 
     const dispatch = useDispatch();
 
-    useEffect(() => {
+    useEffect(() => { //hook to use other components in the React library
 
         if (error.message) {
             setErrorMessage(error.message)
@@ -83,6 +118,8 @@ const renderInput = ({ input, label }) => {
 
     )
 }
+
+// Need a handleSubmit here
 
 
 export default reduxForm({

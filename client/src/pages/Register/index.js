@@ -15,6 +15,7 @@ const Register = () => {
     }
 
     const onFormSubmit = (formVal) => {
+        console.log("onFormSubmit");
         dispatch(registerUser(formVal));
     }
 

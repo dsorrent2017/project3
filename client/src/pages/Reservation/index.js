@@ -48,12 +48,6 @@ function Reservation() {
         </div>
      
         
-
-
-      
-         
-        
-
         <footer className="page-footer" />
         <div className="container">
             <a className="navbar-brand animated pulse d-block text-center m-0 p-0" href="#" />
