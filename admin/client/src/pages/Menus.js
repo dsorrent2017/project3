@@ -16,7 +16,8 @@ function Menus() {
   const [formObject, setFormObject] = useState({})
 
   // Load all menus and store them with setMenus
-  useEffect(() => {
+    useEffect(() => {
+        debugger;
     loadMenus()
   }, [])
 
@@ -31,7 +32,8 @@ function Menus() {
   };
 
   // Deletes a menu from the database with a given id, then reloads menus from the db
-  function deleteMenu(id) {
+    function deleteMenu(id) {
+
     API.deleteMenu(id)
       .then(res => loadMenus())
       .catch(err => console.log(err));

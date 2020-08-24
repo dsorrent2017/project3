@@ -17,6 +17,26 @@ export default {
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
     },
+
+    // Gets all reservations
+    getReservations: function () {
+        debugger;
+        return axios.get("/api/reservations");
+    },
+    // Gets the book with the given id
+    getReservation: function (id) {
+        return axios.get("/api/reservations" + id);
+    },
+    // Deletes the book with the given id
+    deleteReservation: function (id) {
+        return axios.delete("/api/reservations/" + id);
+    },
+
+    makeReservation: function (reservationData) {
+        return axios.post("/api/reservations", reservationData);
+    },
+
+
   // Menu section
     getMenus: function () {
         return axios.get("/api/menus");

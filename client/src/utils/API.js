@@ -33,7 +33,7 @@ export default {
     },
     // Saves a reservation to DB
     makeReservation: function (reservationData) {   //PATTERN AFTER Registration
-        return axios.post("/api/reservations", menuData);
+        return axios.post("/api/reservations", reservationData);
     },
 
 
