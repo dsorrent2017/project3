@@ -2,6 +2,7 @@ import React from 'react';
 // import { Header, Message } from "semantic-ui-react";
 import "./style.css"
 
+//Dan -- Maybe use some of the code from the Menus.page in the pages folcer
 export const Menu = () => {
     return (
         <>

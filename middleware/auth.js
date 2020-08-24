@@ -3,6 +3,7 @@ const config = require("../config");
 
 // middleware to check if token is valid and has not expired
 module.exports = async (req, res, next) => {
+    console.log('auth.js entered getting token JWT style')
     // grab token from the request header
     const token = req.header("token");
     // if there is no token return error
