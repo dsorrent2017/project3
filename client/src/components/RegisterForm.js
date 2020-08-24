@@ -48,7 +48,7 @@ const RegisterForm = (props) => {  //This is React dependency injection calling 
     const dispatch = useDispatch();
 
     useEffect(() => { //hook to use other components in the React library
-
+        debugger;
         if (error.message) {
             setErrorMessage(error.message)
             dispatch(clearErrors())
@@ -98,6 +98,8 @@ const RegisterForm = (props) => {  //This is React dependency injection calling 
 const renderInput = ({ input, label }) => {
 
     const selectIcon = () => {
+
+        debugger;
 
         if (input.name === "email" || input.name === "firstname" || input.name === "lastname") {
             return "user icon"

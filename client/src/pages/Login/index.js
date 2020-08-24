@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 
 const Login = (props) => {
+    debugger;
     // access to the isAuthenticated property from the auth reducer state
     const { isAuthenticated } = useSelector(state => state.auth)
 
@@ -15,6 +16,7 @@ const Login = (props) => {
 
     useEffect(() => {
         if (isAuthenticated) {
+            debugger;
             props.history.push("/pageone")
         }
 
@@ -25,6 +27,7 @@ const Login = (props) => {
     }
 
     const onFormSubmit = (formVal) => {
+        debugger;
         dispatch(loginUser(formVal));
     }
 

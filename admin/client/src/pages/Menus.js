@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
@@ -6,6 +7,8 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+
+
 
 function Menus() {
   // Setting our component's initial state
@@ -36,7 +39,7 @@ function Menus() {
 
   // Handles updating component state when the user types into the input field
     function handleInputChange(event) {
-        debugger;
+  
     const { name, value } = event.target;
     setFormObject({...formObject, [name]: value})
   };
@@ -46,15 +49,19 @@ function Menus() {
     function handleFormSubmit(event) {
         debugger;
     event.preventDefault();
-    if (formObject.category && formObject.itemName) {
-      API.saveMenu({
-        category: formObject.category,
-        itemName: formObject.itemName,
-        ingredientsUrl: formObject.ingredientsUrl
-      })
-        .then(res => loadMenus())
-        .catch(err => console.log(err));
-    }
+        debugger;
+        console.log("!!!!!!!!!!! category " + formObject.category + " itemName " + formObject.itemName)
+        if (formObject.category && formObject.itemName) {
+            API.saveMenu({
+                category: formObject.category,
+                itemName: formObject.itemName,
+                ingredientsUrl: formObject.ingredientsUrl
+            })
+                .then(res => loadMenus())
+                .catch(err => console.log(err));
+        } else {
+            alert('Please fill in values for category and item name')
+        }
     };
 
     /*****
@@ -88,7 +95,6 @@ function Menus() {
             />
 
               <FormBtn
-                disabled={!(formObject.category && formObject.itemName)}
                 onClick={handleFormSubmit}
               >
                 Submit Menu

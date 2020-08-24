@@ -7,7 +7,7 @@ module.exports = {
     async register(req, res) {
 
         try {
-
+            console.log("authController register");
             const { email, password, firstname, lastname } = req.body;
             // Check user enters all fields
             if (!email || !password || !firstname || !lastname) return res.status(400).json({ message: "Please enter all fields" });
@@ -58,7 +58,7 @@ module.exports = {
     },
 
     async login(req, res) {
-
+        console.log("authController login")
         try {
 
             const { email, password } = req.body;
@@ -93,6 +93,7 @@ module.exports = {
     },
     // get user information
     async getUser(req, res) {
+        console.log("authController getUser")
         try {
             // find user by id
             const user = await User.findById(req.userId)

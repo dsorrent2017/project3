@@ -8,5 +8,7 @@ export const USER_LOADING = "USER_LOADING";
 export const AUTH_ERROR = "AUTH_ERROR";
 export const GET_ERRORS = "GET_ERRORS";
 export const CLEAR_ERRORS = "CLEAR_ERRORS";
+export const RESERVATION_SUCCESS = "RESERVATION_SUCCESS";
+export const RESERVATION_FAIL = "RESERVATION_FAIL";
 
 

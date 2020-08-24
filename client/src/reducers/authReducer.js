@@ -16,6 +16,8 @@ const initialState = {
 // reducer to handle auth Actions
 export default (state = initialState, action) => {
 
+    debugger;
+
     switch (action.type) {
         case REGISTER_SUCCESS:
         case LOGIN_SUCCESS:

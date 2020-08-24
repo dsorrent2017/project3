@@ -6,21 +6,23 @@ import { Field, reduxForm } from "redux-form";
 import { clearErrors } from "../actions/authActions";
 
 const LoginForm = (props) => {
-
+    debugger;
+    console.log("login form processes props and dispatch which updates props in state")
     const error = useSelector(state => state.errors);
     const [errorMessage, setErrorMessage] = useState("");
 
     const dispatch = useDispatch();
 
     useEffect(() => {
-
+        debugger;
         if (error.message) {
             setErrorMessage(error.message)
             dispatch(clearErrors())
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [error])
+    }, [error]);
 
+    debugger;
     return (
         <>
 
@@ -51,7 +53,7 @@ const LoginForm = (props) => {
 }
 
 const renderInput = ({ input, label }) => {
-
+    debugger;
     const selectIcon = () => {
 
         if (input.name === "email") {
@@ -62,6 +64,7 @@ const renderInput = ({ input, label }) => {
 
     }
 
+    debugger;
     return (
 
         <div className="field">

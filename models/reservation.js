@@ -31,8 +31,9 @@ const DeliveryOrCaterer = new Schema({
     },
     providerContactName: {
         type: String,
+        require: true
 
-    }
+    },
     providerHomePage: {
         type: String,
         require: true
@@ -46,7 +47,7 @@ const ReservationSchema = new Schema({
     },
     lastname: {
         type: String,
-        require: false,
+        require: true,
     },
 
     email: {
@@ -55,8 +56,9 @@ const ReservationSchema = new Schema({
     },
     //Probably want a time range for delivery and for holding a reservation at a sit-down visit, 
     //see time range by moment- range library https://www.npmjs.com/package/moment-range
+    //TODO : change to a true date type
     date: {     //Date and time of reservation      
-        type: Date,
+        type: String,
         require: true
     },
     delivery: {

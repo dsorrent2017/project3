@@ -31,6 +31,7 @@ export default {
     },
     // Saves a menu to the database
     saveMenu: function (menuData) {
+        console.log("!!!!!!!!!!!!!!!!!!!!!! savemenu menuData = " )
         return axios.post("/api/menus", menuData);
     }
 };
