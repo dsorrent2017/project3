@@ -30,6 +30,7 @@
     "express": "^4.17.1",
     "google-map-react": "^2.0.8",
     "jsonwebtoken": "^8.5.1",
+    "moment-range": "^4.0.2",
     "mongoose": "^5.9.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

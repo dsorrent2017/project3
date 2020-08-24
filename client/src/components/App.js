@@ -18,6 +18,8 @@ import Orderonline from "../pages/Orderonline";
 // import Checkout from "../pages/Checkout";
 // import React, { useState } from "react";
 
+//import Menus from "../pages/Menus";  //Dan -- we need an admin folder for Menus, Reservations and other admin pages, Just following GoogleBooks HW Layout for now
+
 export const App = () => {
 
     const dispatch = useDispatch();

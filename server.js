@@ -15,6 +15,7 @@ app.use(express.json())
 if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "./client/build")))
 };
+console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!! config " + JSON.stringify(config));
 
 // connect to Mongo DB 
 mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: true })

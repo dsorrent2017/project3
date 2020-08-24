@@ -50,6 +50,7 @@ export const registerUser = (data) => async dispatch => {
 // Action to login users
 export const loginUser = (data) => async dispatch => {
     try {
+        debugger;
         // send request to server side to login user
         const response = await API.login(data);
         // dispatch to reducer
