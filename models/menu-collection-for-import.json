@@ -1,0 +1,169 @@
+[
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2846"
+    },
+    "category": "Salad",
+    "itemName": "Caesar Salad",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2847"
+    },
+    "category": "Salad",
+    "itemName": "House Salad",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2848"
+    },
+    "category": "Salad",
+    "itemName": "Cob Salad",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2849"
+    },
+    "category": "Salad",
+    "itemName": "Chicken Salad",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a284a"
+    },
+    "category": "Panini",
+    "itemName": "Caprese  Panini",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a284b"
+    },
+    "category": "Panini",
+    "itemName": "Eggplant Panini",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a284c"
+    },
+    "category": "Panini",
+    "itemName": "Grilled Chicken Panini",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a284d"
+    },
+    "category": "Panini",
+    "itemName": "Greek Panini",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a284e"
+    },
+    "category": "Pasta",
+    "itemName": "Luiguini Marinara",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a284f"
+    },
+    "category": "Pasta",
+    "itemName": "Fettucini Alfredo",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2850"
+    },
+    "category": "Pasta",
+    "itemName": "Rigatoni Bolognese",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2851"
+    },
+    "category": "Pasta",
+    "itemName": "Cheese Ravioli",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2852"
+    },
+    "category": "Chicken Entres",
+    "itemName": "Chicken Francese",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2853"
+    },
+    "category": "Chicken Entres",
+    "itemName": "Chicken Alfredo",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2854"
+    },
+    "category": "Chicken Entres",
+    "itemName": "Chicken Parmigiana",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f3df8540f831487580a2855"
+    },
+    "category": "Chicken Entres",
+    "itemName": "Breaded Chicken Cutlet",
+    "ingredientsUrl": {
+      "required": false
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5f406696036e4c0d6c4f413d"
+    },
+    "category": "Sub",
+    "itemName": "Italian Combo"
+  }
+]
